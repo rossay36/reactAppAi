@@ -1,0 +1,24 @@
+.artical {
+  position: relative;
+  max-width: 100;
+  padding: 1rem;
+  display: grid;
+}
+
+.artical__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.artical__container > * {
+  flex-grow: 1;
+  flex-basis: calc(calc(35rem - 100%) * 999);
+}
+
+.artical__section {
+  display: grid;
+  gap: 1rem;
+}

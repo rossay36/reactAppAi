@@ -1,0 +1,126 @@
+.footer {
+  position: relative;
+  max-width: 100%;
+  min-height: max-content;
+}
+
+.footer__container {
+  position: relative;
+  background: #06041c;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1rem 0;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(450deg, #9400d3, #0000ff, #00bfff);
+  /* min-height: 50px; */
+  width: 80%;
+  margin-inline: auto;
+  text-align: start;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  line-height: 1.1;
+}
+
+.footer__top-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  max-width: 100%;
+}
+
+.footer__top-button button:nth-of-type(1) {
+  border: none;
+  width: auto;
+  height: 30px;
+  padding: 0.2 0.5;
+  background: linear-gradient(40deg, #00ce00, #ffb6c1, #151515);
+  border-radius: 1rem;
+  color: #fff;
+}
+.footer__top-button button:nth-of-type(2) {
+  border: none;
+  width: auto;
+  height: 30px;
+  padding: 0.2 0.5;
+  border-radius: 1rem;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.footer__top-p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__center {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.footer__center-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.footer__center-logo img {
+  width: 2rem;
+}
+
+.footer__center-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+  text-align: start;
+  /* background-color: #0000ff; */
+}
+.footer__center-content h2 {
+  color: #0000ff;
+}
+
+.div {
+  width: 100%;
+  height: 1px;
+  background-color: #8f8f8f;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  /* padding-block: 1rem; */
+  /* background-color: #00bfff; */
+}
+
+.footer__bottom-p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.footer__bottom-button p {
+  border: 1px solid #8f8f8f;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 620px) {
+  .footer__center {
+    padding: 2rem 0 1rem 1rem;
+  }
+}

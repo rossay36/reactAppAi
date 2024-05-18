@@ -1,0 +1,77 @@
+.ai {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.635);
+}
+
+.ai::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../assets/ai1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ai__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.ai__title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ai__button {
+  display: flex;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.ai__ptitle {
+  line-height: 1.1;
+}
+
+.ai__button button {
+  padding: 0.5rem 1.5rem;
+  max-width: 150px;
+  background-color: rgb(42, 6, 221);
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+@media screen and (max-width: 620px) {
+  .ai__container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai__title {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai__button button {
+    width: 100px;
+  }
+}

@@ -1,0 +1,20 @@
+.product {
+  position: relative;
+  max-width: 100%;
+  background: #06041c;
+  padding: 1rem;
+}
+
+.product__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.5rem;
+}
+
+.product__list img {
+  aspect-ratio: 1.5 /1;
+}
+
+.product__list p {
+  color: rgb(175, 173, 173);
+}

@@ -1,0 +1,58 @@
+.heroai {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.heroai::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background-image: url("../../assets/ai.jpg");
+  z-index: -1;
+}
+
+.heroai__container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8rem 2rem 4rem 0;
+  text-align: right;
+  gap: 2rem;
+}
+
+.heroai__lorem {
+  max-width: 40%;
+  color: #fff;
+}
+
+.heroai__button button {
+  background-image: linear-gradient(30deg, lightBlue, blue);
+  padding: 0.2rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 620px) {
+  .heroai__container {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 1rem 1rem 1rem;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .heroai__lorem {
+    max-width: 100%;
+  }
+}
